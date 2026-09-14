@@ -1,16 +1,22 @@
-# This is a sample Python script.
+tekst = "3"
+getal = 5
 
-# Press ⌃F5 to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+print(type(tekst))
+print(type(getal))
 
+# In JavaScript wordt "3" + 5 de tekst "35". Omdat een van de waarden
+# tekst is, gebruikt JavaScript de + om de waarden aan elkaar te plakken.
+#
+# In PHP wordt "3" + 5 het getal 8. PHP gebruikt + om op te tellen en
+# zet de numerieke tekst "3" daarvoor om naar het getal 3. Voor het aan
+# elkaar plakken van tekst gebruikt PHP een punt (.).
+#
+# Een TypeError ontstaat wanneer een bewerking niet mogelijk is met de
+# gebruikte datatypes, zoals het optellen van een str en een int.
+# Een ValueError ontstaat wanneer het datatype wel wordt geaccepteerd,
+# maar de inhoud van de waarde ongeldig is, bijvoorbeeld int("drie").
+#
+# Verwachte foutmelding:
+# TypeError: can only concatenate str (not "int") to str
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+resultaat = tekst + getal
