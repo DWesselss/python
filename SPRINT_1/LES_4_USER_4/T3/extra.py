@@ -6,7 +6,7 @@ tello.connect()
 try:
     battery = tello.get_battery()
 
-    # Tijdelijke testwaarde om de assert bewust te laten falen.
+    # testwaarde om error te krijgen
     battery = 5
 
     assert battery > 20, "Batterij te laag!"

@@ -1,20 +1,20 @@
-# Importeert de Tello-klasse uit djitellopy.
+# importeert tello van dji tellopy lib
 from djitellopy import Tello
 
-# Maakt een object aan waarmee we de drone besturen.
+# maakt object aan om drone te commanderen
 tello = Tello()
 
-# Verbindt het programma met de drone via wifi.
+# verbind met drone
 tello.connect()
 
-# Vraagt het batterijpercentage van de drone op.
+# vraagt batterij%
 battery = tello.get_battery()
 
 # Toont het batterijpercentage in de terminal.
 print(f"Batterij: {battery}%")
 
-# Controleert of de batterij hoger is dan 20%.
+# kijkt of de batterij hoger is dan 20%
 assert battery > 20, "Batterij te laag om op te stijgen!"
 
-# Sluit de verbinding met de drone netjes af.
+# sluit de verbinding met de drone
 tello.end()
